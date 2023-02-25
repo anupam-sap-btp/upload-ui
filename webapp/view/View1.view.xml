@@ -1,0 +1,12 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="uploadxlsx.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <l:VerticalLayout id='vlayout'>
+                <u:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="upload/" tooltip="Upload student file" uploadComplete="handleUploadComplete" />
+                <Button id="fupld" text="Upload File" press="handleUploadPress" />
+            </l:VerticalLayout>
+            <!-- <Text id='txt' text="{path: '/uploadTest()', type: 'sap.ui.model.odata.type.String'}" bindingContexts="/uploadTest(...)"/> -->
+            <!-- <form:Form id='form1' bin></form:Form> -->
+        </content>
+    </Page>
+</mvc:View>
